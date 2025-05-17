@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 module.exports = async (req, res) => {
   const tag = req.query.tag;
   if (!tag) return res.status(400).json({ error: 'Tag manquant' });
